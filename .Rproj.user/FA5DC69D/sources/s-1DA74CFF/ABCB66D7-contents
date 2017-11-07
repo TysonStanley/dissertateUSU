@@ -29,7 +29,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
                       warning = FALSE, 
                       message = FALSE)
 ## Do NOT Remove
-preamble_for_title()
+dissertateUSU::preamble_for_title()
 ```
 
 <!-- Title page printed automatically -->
@@ -115,11 +115,11 @@ Introduce the thing.
 
 <!-- Chapter 2 -->
 \newpage
-\fancyhead[L]{Chapter 2}
+\fancyhead[L]{Chapter 2's Title}
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
 
-\chapter{Chapter 2}
+\chapter{Chapter 2's Title}
 
 Tells us more.
 
@@ -127,33 +127,33 @@ Tells us more.
 
 <!-- Chapter 3 -->
 \newpage
-\fancyhead[L]{Chapter 3}
+\fancyhead[L]{Chapter 3's Title}
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
 
-\chapter{Chapter 3}
+\chapter{Chapter 3's Title}
 
 Don't stop now.
 
 
 \FloatBarrier
 \newpage
-\fancyhead[L]{Chapter 4}
+\fancyhead[L]{Chapter 4's Title}
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
 
-\chapter{Chapter 4}
+\chapter{Chapter 4's Title}
 
 Keep it going.
 
 
 \FloatBarrier
 \newpage
-\fancyhead[L]{Simulation Study}
+\fancyhead[L]{Chapter 5's Title}
 \fancyhead[R]{\thepage}
 \fancyfoot[C]{}
 
-\chapter{Chapter 5}
+\chapter{Chapter 5's Title}
 
 Well done.
 

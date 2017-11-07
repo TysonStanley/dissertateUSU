@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3922611503",
     "id" : "ABCB66D7",
-    "lastKnownWriteTime" : 1510097026,
-    "last_content_update" : 1510097026,
+    "lastKnownWriteTime" : 1510097194,
+    "last_content_update" : 1510097194768,
     "path" : "~/Dropbox/1 Dissertation/dissertateUSU/inst/rmarkdown/templates/dissertateUSU/skeleton/skeleton.Rmd",
     "project_path" : "inst/rmarkdown/templates/dissertateUSU/skeleton/skeleton.Rmd",
     "properties" : {
-        "cursorPosition" : "155,19",
+        "cursorPosition" : "155,26",
         "scrollLine" : "142"
     },
     "relative_order" : 6,
