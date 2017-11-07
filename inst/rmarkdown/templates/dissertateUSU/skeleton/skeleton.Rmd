@@ -11,14 +11,14 @@ output:
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
 params:
   year: '2018'
-  degree: 'Doctor of Philosphy'
+  degree: 'Degree'
   field: 'Field'
   chair: 'Chair Person'
   committee1: 'Committee Member 1'
   committee2: 'Committee Member 2'
   committee3: 'Committee Member 3'
   committee4: 'Committee Member 4'
-  gradschool: 'Committee Member 5'
+  gradschool: 'The Graduate School Individual'
     
 ---
 
