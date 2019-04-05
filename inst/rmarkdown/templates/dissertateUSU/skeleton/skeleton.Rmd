@@ -1,25 +1,21 @@
 ---
-documentclass: DissertateUSU
 title: 'Dissertating for USU'
-author: You
+runningtitle: "Short Version of Title"
+author: "You"
 output:
-  pdf_document:
+  dissertateUSU::dissertateUSU:
     latex_engine: xelatex
-    includes:
-      in_header: preamble.tex
     keep_tex: yes
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
-params:
-  year: '2018'
-  degree: 'Degree'
-  field: 'Field'
-  chair: 'Chair Person'
-  committee1: 'Committee Member 1'
-  committee2: 'Committee Member 2'
-  committee3: 'Committee Member 3'
-  committee4: 'Committee Member 4'
-  gradschool: 'The Graduate School Individual'
-    
+year: '2018'
+degree: 'Degree'
+field: 'Field'
+chair: 'Chair Person'
+committee2: 'Committee Member 1'
+committee3: 'Committee Member 2'
+committee4: 'Committee Member 3'
+committee5: 'Committee Member 4'
+gradschool: 'The Graduate School Individual'
 ---
 
 ```{r global_options, include=FALSE}
@@ -28,8 +24,6 @@ knitr::opts_chunk$set(fig.path = 'figures/',
                       echo = FALSE, 
                       warning = FALSE, 
                       message = FALSE)
-## Do NOT Remove
-dissertateUSU::preamble_for_title()
 ```
 
 <!-- Title page printed automatically -->
@@ -46,7 +40,7 @@ dissertateUSU::preamble_for_title()
 \chapter*{ABSTRACT}
 \addcontentsline{toc}{section}{Abstract}
 
-Abstract words.
+Abstract words go here.
 
 <!-- Public Abstract -->
 \newpage
@@ -56,7 +50,7 @@ Abstract words.
 \chapter*{PUBLIC ABSTRACT}
 \addcontentsline{toc}{section}{Public Abstract}
 
-Publically abstracted words.
+Publically abstracted words go here.
 
 <!-- Dedication -->
 \newpage
@@ -76,7 +70,7 @@ Dedicate it.
 \chapter*{ACKNOWLEDGEMENTS}
 \addcontentsline{toc}{section}{Acknowledgments}
 
-Acknowledge them.
+Acknowledge those acknowledgable individuals and things.
 
 <!-- Front Matter -->
 \newpage
@@ -109,7 +103,9 @@ Acknowledge them.
 
 \chapter{INTRODUCTION}
 
-Introduce the thing.
+```{r, child="Chapter1.Rmd"}
+```
+
 
 \FloatBarrier
 
@@ -121,7 +117,8 @@ Introduce the thing.
 
 \chapter{Chapter 2's Title}
 
-Tells us more.
+```{r, child="Chapter2.Rmd"}
+```
 
 \FloatBarrier
 
@@ -133,7 +130,8 @@ Tells us more.
 
 \chapter{Chapter 3's Title}
 
-Don't stop now.
+```{r, child="Chapter3.Rmd"}
+```
 
 
 \FloatBarrier
@@ -144,7 +142,8 @@ Don't stop now.
 
 \chapter{Chapter 4's Title}
 
-Keep it going.
+```{r, child="Chapter4.Rmd"}
+```
 
 
 \FloatBarrier
@@ -155,7 +154,8 @@ Keep it going.
 
 \chapter{Chapter 5's Title}
 
-Well done.
+```{r, child="Chapter5.Rmd"}
+```
 
 \FloatBarrier
 

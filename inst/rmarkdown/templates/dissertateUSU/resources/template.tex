@@ -1,0 +1,177 @@
+%% For Use With Dissertate USU LaTeX Class
+%% Added to RMarkdown by Tyson S. Barrett, PhD
+
+% Document class and options
+\documentclass[$geometry$]{DissertateUSU}
+
+% Pandoc header
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$preamble$
+
+\usepackage{endnotes}% if authoryear option is used
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{amsmath,amsfonts}% popular packages from the American Mathematical Society
+\usepackage{latexsym}% latex symbols
+\usepackage{lineno}% for line numbers
+\usepackage{array}% for tables
+\usepackage{ulem}% for underlining
+\usepackage{xcolor}%  for color declarations
+\usepackage{hyperref}% for hypertext linking
+% for the tightlist
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% For code highlighting and such
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\singlespacing\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{array}
+\newcolumntype{x}[1]{%
+  >{\\centering\\arraybackslash}m{#1}}%
+\usepackage{placeins}
+\usepackage{chngcntr}
+\counterwithin{figure}{chapter}
+\counterwithin{table}{chapter}
+\usepackage[makeroom]{cancel}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Figure numbering - chapter.number %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LAYOUT: Title Page - info filled above    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\maketitle}{
+	\thispagestyle{empty}
+	\vspace*{\fill}
+	\begin{center}
+	\doublespaced
+	\MakeUppercase{$title$}\\
+	by\\
+	$author$ \\
+	\singlespaced
+	A dissertation submitted in partial fulfillment\\
+	of the requirements for the degree \\
+	\doublespaced
+	of\\
+	\MakeUppercase{$degree$} \\
+	in\\
+	\singlespaced
+  $field$ \\
+	\end{center}
+	\vspace{12pt}
+	\noindent Approved: \\
+	\vspace{20pt}
+	\begin{tabular}{ll}
+	  \centering
+    \makebox[2.75in]{\hrulefill} & \makebox[2.7in]{\hrulefill}\\
+    $chair$                      & $committee2$ \\
+    Major Professor              & Committee Member \\
+    & \\
+    & \\
+    \makebox[2.75in]{\hrulefill} & \makebox[2.75in]{\hrulefill}\\
+    $committee3$                 & $committee4$ \\
+    Committee Member             & Committee Member \\
+    & \\
+    & \\
+    \makebox[2.75in]{\hrulefill} & \makebox[2.75in]{\hrulefill}\\
+    $committee5$                 & $gradschool$ \\
+    Committee Member             & Vice President for Research and \\
+                                 & Dean of the School of Graduate Studies \\
+    \end{tabular}
+  \vspace{10pt}
+    \begin{center}
+	  \singlespacing
+      UTAH STATE UNIVERSITY\\
+	    Logan, Utah\\
+	    \doublespacing
+	    $year$
+	  \end{center}
+	\vspace*{\fill}
+	\clearpage
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LAYOUT: Copy Right - info filled above    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\copyrightpage}{
+	\vspace*{\fill}
+  \begin{center}
+	\doublespacing
+	Copyright \hspace{3pt}
+	  \scshape \small \copyright  \hspace{3pt}
+	  $author$ \hspace{3pt} $year$ \\
+	All Rights Reserved
+  \end{center}
+	\vspace*{\fill}
+}
+
+
+
+
+\begin{document}
+
+\maketitle
+
+
+$body$
+
+$if(bibliography)$
+\bibliographystyle{$bibliographystyle$}
+\bibliography{$bibliography$}
+$endif$
+
+$for(include-after)$
+$include-after$
+
+$endfor$
+
+\end{document}
