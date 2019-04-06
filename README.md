@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU`
+# `dissertateUSU v0.1.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
