@@ -27,10 +27,6 @@ knitr::opts_chunk$set(fig.path = 'figures/',
                       message = FALSE)
 ```
 
-<!-- Title page printed automatically -->
-\pagenumbering{roman}
-\pagestyle{empty}
-\copyrightpage
 
 <!-- Abstract -->
 \newpage
@@ -43,6 +39,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 
 Abstract words go here.
 
+
 <!-- Public Abstract -->
 \newpage
 \fancyhead[L]{Public Abstract}
@@ -52,6 +49,7 @@ Abstract words go here.
 \addcontentsline{toc}{section}{Public Abstract}
 
 Publically abstracted words go here.
+
 
 <!-- Dedication -->
 \newpage
@@ -63,6 +61,7 @@ Publically abstracted words go here.
 
 Dedicate it.
 
+
 <!-- Acknowledgements -->
 \newpage
 \fancyhead[L]{Acknowledgments}
@@ -72,6 +71,7 @@ Dedicate it.
 \addcontentsline{toc}{section}{Acknowledgments}
 
 Acknowledge those acknowledgable individuals and things.
+
 
 <!-- Front Matter -->
 \newpage
@@ -96,7 +96,7 @@ Acknowledge those acknowledgable individuals and things.
 \newpage
 \pagenumbering{arabic}
 
-<!-- Introduction -->
+<!-- Chapter 1 -->
 \newpage
 \fancyhead[L]{Introduction}
 \fancyhead[R]{\thepage}
@@ -108,9 +108,8 @@ Acknowledge those acknowledgable individuals and things.
 ```
 
 
-\FloatBarrier
-
 <!-- Chapter 2 -->
+\FloatBarrier
 \newpage
 \fancyhead[L]{Chapter 2's Title}
 \fancyhead[R]{\thepage}
@@ -121,9 +120,9 @@ Acknowledge those acknowledgable individuals and things.
 ```{r, child="Chapter2.Rmd"}
 ```
 
-\FloatBarrier
 
 <!-- Chapter 3 -->
+\FloatBarrier
 \newpage
 \fancyhead[L]{Chapter 3's Title}
 \fancyhead[R]{\thepage}
@@ -135,6 +134,7 @@ Acknowledge those acknowledgable individuals and things.
 ```
 
 
+<!-- Chapter 4 -->
 \FloatBarrier
 \newpage
 \fancyhead[L]{Chapter 4's Title}
@@ -147,6 +147,7 @@ Acknowledge those acknowledgable individuals and things.
 ```
 
 
+<!-- Chapter 5 -->
 \FloatBarrier
 \newpage
 \fancyhead[L]{Chapter 5's Title}
@@ -158,8 +159,9 @@ Acknowledge those acknowledgable individuals and things.
 ```{r, child="Chapter5.Rmd"}
 ```
 
-\FloatBarrier
 
+
+\FloatBarrier
 \newpage
 \fancyhead[L]{References}
 \fancyhead[R]{\thepage}
