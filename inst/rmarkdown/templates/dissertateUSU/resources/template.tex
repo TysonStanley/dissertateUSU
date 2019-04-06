@@ -2,7 +2,8 @@
 %% Added to RMarkdown by Tyson S. Barrett, PhD
 
 % Document class and options
-\documentclass[$geometry$]{DissertateUSU}
+\documentclass{DissertateUSU}
+\usepackage[$geometry$]{geometry}
 
 % Pandoc header
 $for(header-includes)$
@@ -160,7 +161,7 @@ $preamble$
 \begin{document}
 
 \maketitle
-
+\copyrightpage
 
 $body$
 

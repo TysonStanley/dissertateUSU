@@ -2,7 +2,7 @@
 
 find_file <- function(template, file) {
   template <- system.file("rmarkdown", "templates", template, file,
-                          package = "rjasa")
+                          package = "dissertateUSU")
   if (template == "") {
     stop("Couldn't find template file ", template, "/", file, call. = FALSE)
   }
