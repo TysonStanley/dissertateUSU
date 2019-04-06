@@ -16,6 +16,7 @@ committee3: 'Committee Member 2'
 committee4: 'Committee Member 3'
 committee5: 'Committee Member 4'
 gradschool: 'The Graduate School Individual'
+bibliography: yourbibfile
 ---
 
 ```{r global_options, include=FALSE}
