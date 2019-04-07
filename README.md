@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU v0.1.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.1.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
@@ -18,7 +18,7 @@ document correct.
 
 ## Installation
 
-You can install the released version of dissertateUSU with:
+You can install `dissertateUSU` with:
 
 ``` r
 remotes::install_github("tysonstanley/dissertateUSU")
@@ -55,3 +55,9 @@ acknowledgments, and dedication.
 
 The package is still undergoing some development and we would love
 feedback on any aspect that doesn’t work as expected.
+
+We also want to thank the
+[`rticles`](https://github.com/rstudio/rticles) package for the
+functionality for `dissertateUSU`. Many of the functions herein were
+derived directly from `rticles`, just with a custom template and LaTeX
+style.

@@ -1,4 +1,5 @@
-## Utils from the fabulous rticles package
+## Utils from the fabulous `rticles` package
+##   https://github.com/rstudio/rticles
 
 find_file <- function(template, file) {
   template <- system.file("rmarkdown", "templates", template, file,
@@ -23,22 +24,6 @@ merge_list <- function(x, y) {
   fun(as.list(x), y)
 }
 
-#' Render a pandoc template.
-#'
-#' This is a hacky way to access the pandoc templating engine.
-#'
-#' @param metadata A named list containing metadata to pass to template.
-#' @param template Path to a pandoc template.
-#' @param output Path to save output.
-#' @return (Invisibly) The path of the generate file.
-#' @examples
-#' x <- rticles:::template_pandoc(
-#'   list(preamble = "%abc", filename = "wickham"),
-#'   rticles:::find_resource("rjournal_article", "RJwrapper.tex"),
-#'   tempfile()
-#' )
-#' if (interactive()) file.show(x)
-#' @noRd
 template_pandoc <- function(metadata, template, output, verbose = FALSE) {
   tmp <- tempfile(fileext = ".md")
   on.exit(unlink(tmp))
@@ -73,7 +58,6 @@ pdf_document_format <- function(..., format, template, csl) {
   fmt$pandoc$args <- c(fmt$pandoc$args,
                        "--csl",
                        rmarkdown::pandoc_path_arg(find_resource(format, csl)))
-
 
   # return format
   fmt

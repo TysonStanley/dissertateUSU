@@ -1,7 +1,7 @@
 Package: dissertateUSU
 Type: Package
 Title: DissertateUSU
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(person("Tyson S.", "Barrett",  
                     role=c("aut","cre"), 
                     email = "t.barrett@aggiemail.usu.edu", 
@@ -13,8 +13,7 @@ Description: Provides the template and functions that make writing a dissertatio
 Imports: 
     rmarkdown,
     knitr,
-    yaml
-Suggests:
+    yaml,
     rticles
 License: GPL-2
 Encoding: UTF-8

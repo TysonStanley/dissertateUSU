@@ -10,16 +10,19 @@
 #'
 #' @details Possible arguments for the YAML header are:
 #' \itemize{
-#'   \item \code{title} title of the manuscript
-#'   \item \code{runninghead} short author list for header
+#'   \item \code{title} title of the dissertation
+#'   \item \code{runningtitle} short title of the dissertation
 #'   \item \code{author} list of authors, containing \code{name} and \code{num}
-#'   \item \code{address} list containing \code{num} and \code{org} for defining \code{author} affiliations
-#'   \item \code{corrauth} corresponding author name and address
-#'   \item \code{email} correspondence email
-#'   \item \code{abstract} abstract, limited to 200 words
-#'   \item \code{keywords} keywords for the artucle
+#'   \item \code{year} year of defense
+#'   \item \code{degree} degree earned (e.g. "Doctor of Philosphy")
+#'   \item \code{field} the field the degree is awarded in
+#'   \item \code{chair} name of the defense committee chairperson
+#'   \item \code{committee2} name of second committee member
+#'   \item \code{committee3} name of third committee member
+#'   \item \code{committee4} name of fourth committee member
+#'   \item \code{committee5} name of fifth committee member
+#'   \item \code{gradschool} name of the graduate school member who needs to sign off on the degree
 #'   \item \code{bibliography} BibTeX \code{.bib} file name
-#'   \item \code{classoption} options of the \code{JASA-EL} class
 #'  \item \code{header-includes}: custom additions to the header, before the \code{\\begin\{document\}} statement
 #'  \item \code{include-after}: for including additional LaTeX code before the \code{\\end\{document\}} statement}
 #'
@@ -27,9 +30,10 @@
 #'
 #' \dontrun{
 #' library(rmarkdown)
-#' draft("MyArticle.Rmd", template = "jasa_el", package = "rjasa")
+#' draft("MyArticle.Rmd", template = "dissertateUSU", package = "dissertateUSU")
 #' }
 #'
+#' @import rticles
 #' @import yaml
 #'
 #' @export
