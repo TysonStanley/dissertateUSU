@@ -23,8 +23,10 @@
 #'   \item \code{committee5} name of fifth committee member
 #'   \item \code{gradschool} name of the graduate school member who needs to sign off on the degree
 #'   \item \code{bibliography} BibTeX \code{.bib} file name
-#'  \item \code{header-includes}: custom additions to the header, before the \code{\\begin\{document\}} statement
-#'  \item \code{include-after}: for including additional LaTeX code before the \code{\\end\{document\}} statement}
+#'   \item \code{bibliographystyle} the .csl citation style file name
+#'   \item \code{header-includes}: custom additions to the header, before the \code{\\begin\{document\}} statement
+#'   \item \code{include-after}: for including additional LaTeX code before the \code{\\end\{document\}} statement
+#'   }
 #'
 #' @examples
 #'

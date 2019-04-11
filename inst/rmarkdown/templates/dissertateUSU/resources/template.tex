@@ -12,7 +12,10 @@ $endfor$
 
 $preamble$
 
+
+%% Hopefully fixing an error caused by outdated chngcntr package
 \let\counterwithout\relax
+\let\counterwithin\relax
 
 \usepackage{endnotes}% if authoryear option is used
 \usepackage{graphicx}% Include figure files
@@ -77,7 +80,6 @@ $preamble$
 \newcolumntype{x}[1]{%
   >{\\centering\\arraybackslash}m{#1}}%
 \usepackage{placeins}
-\usepackage{chngcntr}
 \counterwithin{figure}{chapter}
 \counterwithin{table}{chapter}
 \usepackage[makeroom]{cancel}

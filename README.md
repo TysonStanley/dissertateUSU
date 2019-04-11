@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.1.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.1.3` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
@@ -61,3 +61,6 @@ We also want to thank the
 functionality for `dissertateUSU`. Many of the functions herein were
 derived directly from `rticles`, just with a custom template and LaTeX
 style.
+
+A special thanks to David Jenks for his help finding LaTeX bugs from
+older LaTeX releases.
