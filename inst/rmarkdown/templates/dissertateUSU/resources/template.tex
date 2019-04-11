@@ -3,7 +3,7 @@
 
 % Document class and options
 \documentclass{DissertateUSU}
-\usepackage[$geometry$]{geometry}
+\usepackage[$for(geometry)$$geometry$$endfor$]{geometry}
 
 % Pandoc header
 $for(header-includes)$
@@ -12,6 +12,7 @@ $endfor$
 
 $preamble$
 
+\let\counterwithout\relax
 \usepackage{endnotes}% if authoryear option is used
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
