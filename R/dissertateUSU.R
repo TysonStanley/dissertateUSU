@@ -39,7 +39,7 @@
 #' @import yaml
 #'
 #' @export
-dissertateUSU <- function(..., highlight = NULL, citation_package = "natbib") {
+dissertateUSU <- function(..., highlight = NULL, citation_package = "none") {
   inherit_pdf_document(...,
                        template = find_resource("dissertateUSU", "template.tex"),
                        highlight = highlight,

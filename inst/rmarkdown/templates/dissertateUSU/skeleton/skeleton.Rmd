@@ -6,6 +6,7 @@ output:
   dissertateUSU::dissertateUSU:
     latex_engine: xelatex
     keep_tex: yes
+    pandoc_args: [ "--csl", "apa6.csl" ]
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
 year: '2018'
 degree: 'Degree'
