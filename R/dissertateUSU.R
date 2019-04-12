@@ -39,9 +39,8 @@
 #' @import yaml
 #'
 #' @export
-dissertateUSU <- function(..., csl = "apa6.csl", highlight = NULL, citation_package = "natbib") {
+dissertateUSU <- function(..., highlight = NULL, citation_package = "natbib") {
   inherit_pdf_document(...,
-                       pandoc_args = paste("--csl", csl),
                        template = find_resource("dissertateUSU", "template.tex"),
                        highlight = highlight,
                        citation_package = citation_package)
