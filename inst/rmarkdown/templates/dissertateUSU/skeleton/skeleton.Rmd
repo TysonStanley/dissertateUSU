@@ -17,7 +17,7 @@ committee4: 'Committee Member 3'
 committee5: 'Committee Member 4'
 gradschool: 'The Graduate School Individual'
 bibliography: yourbibfile
-csl: apa6.csl
+bibliographystyle: apa6
 ---
 
 ```{r global_options, include=FALSE}

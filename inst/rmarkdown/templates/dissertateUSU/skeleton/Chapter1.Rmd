@@ -1,9 +1,7 @@
 
 
-Write your Chapter 1 in this file. Generally this chapter is the introduction. We may have several citations [@RCoreTeam].
+Write your Chapter 1 in this file. Generally this chapter is the introduction. We may have several citations [@RCoreTeam; @dissertateUSU]. Go ahead and erase all the text in this chapter (and the other chapter files, as they are just trying to fill up space for the example)
 
-Go ahead and erase all the text in this chapter (and the other chapter files, as they are just trying to fill up space for the example)
-
-\lipsum[1-56]
+\lipsum
 
 
