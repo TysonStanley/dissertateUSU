@@ -13,10 +13,6 @@ $endfor$
 $preamble$
 
 
-%% Hopefully fixing an error caused by outdated chngcntr package
-\let\counterwithout\relax
-\let\counterwithin\relax
-
 \usepackage{endnotes}% if authoryear option is used
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -81,6 +77,10 @@ $preamble$
   >{\\centering\\arraybackslash}m{#1}}%
 \usepackage{placeins}
 \usepackage{chngcntr}
+%% Hopefully fixing an error caused by outdated chngcntr package
+\let\counterwithout\relax
+\let\counterwithin\relax
+
 \counterwithin{figure}{chapter}
 \counterwithin{table}{chapter}
 \usepackage[makeroom]{cancel}
