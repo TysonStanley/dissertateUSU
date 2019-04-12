@@ -2,11 +2,6 @@
 title: 'Dissertating for USU'
 runningtitle: "Short Version of Title"
 author: "You"
-output:
-  dissertateUSU::dissertateUSU:
-    latex_engine: xelatex
-    keep_tex: yes
-    pandoc_args: [ "--csl", "apa6.csl" ]
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
 year: '2018'
 degree: 'Degree'
@@ -18,6 +13,11 @@ committee4: 'Committee Member 3'
 committee5: 'Committee Member 4'
 gradschool: 'The Graduate School Individual'
 bibliography: yourbibfile.bib
+output:
+  dissertateUSU::dissertateUSU:
+    latex_engine: xelatex
+    keep_tex: yes
+    pandoc_args: [ "--csl", "apa6.csl" ]
 ---
 
 ```{r global_options, include=FALSE}
