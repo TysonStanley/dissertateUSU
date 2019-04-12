@@ -81,6 +81,8 @@ $preamble$
 \usepackage[makeroom]{cancel}
 %% Just for examples
 \usepackage{lipsum}
+%% Citations
+\usepackage{natbib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Figure numbering - chapter.number %%
@@ -173,7 +175,7 @@ $body$
 
 $if(bibliography)$
 \bibliographystyle{$bibliographystyle$}
-\bibliography{$bibliography$}
+\bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
 $endif$
 
 $for(include-after)$

@@ -23,7 +23,7 @@
 #'   \item \code{committee5} name of fifth committee member
 #'   \item \code{gradschool} name of the graduate school member who needs to sign off on the degree
 #'   \item \code{bibliography} BibTeX \code{.bib} file name
-#'   \item \code{bibliographystyle} the .csl citation style file name
+#'   \item \code{csl} the .csl citation style file name
 #'   \item \code{header-includes}: custom additions to the header, before the \code{\\begin\{document\}} statement
 #'   \item \code{include-after}: for including additional LaTeX code before the \code{\\end\{document\}} statement
 #'   }
@@ -39,8 +39,9 @@
 #' @import yaml
 #'
 #' @export
-dissertateUSU <- function(..., highlight = NULL, citation_package = "natbib") {
+dissertateUSU <- function(..., csl = "apa6.csl", highlight = NULL, citation_package = "natbib") {
   inherit_pdf_document(...,
+                       pandoc_args = paste("--csl", csl),
                        template = find_resource("dissertateUSU", "template.tex"),
                        highlight = highlight,
                        citation_package = citation_package)
