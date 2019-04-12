@@ -1,6 +1,5 @@
 ---
 title: 'Dissertating for USU'
-runningtitle: "Short Version of Title"
 author: "You"
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
 year: '2018'

@@ -27,7 +27,6 @@ Format for creating submissions to JASA Journals. Based on the official JASA jou
 Possible arguments for the YAML header are:
 \itemize{
   \item \code{title} title of the dissertation
-  \item \code{runningtitle} short title of the dissertation
   \item \code{author} list of authors, containing \code{name} and \code{num}
   \item \code{year} year of defense
   \item \code{degree} degree earned (e.g. "Doctor of Philosphy")
