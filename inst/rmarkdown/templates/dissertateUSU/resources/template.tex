@@ -76,11 +76,6 @@ $preamble$
 \newcolumntype{x}[1]{%
   >{\\centering\\arraybackslash}m{#1}}%
 \usepackage{placeins}
-%% Hopefully fixing an error caused by outdated chngcntr package
-\let\counterwithout\relax
-\let\counterwithin\relax
-
-\usepackage{chngcntr}
 \counterwithin{figure}{chapter}
 \counterwithin{table}{chapter}
 \usepackage[makeroom]{cancel}
