@@ -24,6 +24,13 @@ You can install `dissertateUSU` with:
 remotes::install_github("tysonstanley/dissertateUSU")
 ```
 
+## LaTeX
+
+> Importantly, this package requires the new release of LaTeX from your
+> preferred distribution. Older versions will often encounter an error
+> regarding “\\counterwithin”. If this error comes up for you, then you
+> need to update your LaTeX.
+
 ## Example
 
 To use the package, after installing it, open up a new RMarkdown file:
