@@ -93,6 +93,7 @@ $preamble$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LAYOUT: Title Page - info filled above    %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$if(committee5)$
 \renewcommand{\maketitle}{
 	\thispagestyle{empty}
 	\vspace*{\fill}
@@ -144,7 +145,56 @@ $preamble$
 	\vspace*{\fill}
 	\clearpage
 }
+$else$
 
+\renewcommand{\maketitle}{
+	\thispagestyle{empty}
+	\vspace*{\fill}
+	\begin{center}
+	\doublespaced
+	\MakeUppercase{$title$}\\
+	by\\
+	$author$ \\
+	\singlespaced
+	A thesis submitted in partial fulfillment\\
+	of the requirements for the degree \\
+	\doublespaced
+	of\\
+	\MakeUppercase{$degree$} \\
+	in\\
+	\singlespaced
+  $field$ \\
+	\end{center}
+
+	\vspace{20pt}
+	\noindent Approved: \\
+	\vspace{30pt}
+	\noindent
+	\begin{tabular}{ll}
+    \makebox[2.75in]{\hrulefill} & \makebox[2.75in]{\hrulefill}\\
+    $chair$                      & $committee2$ \\
+    Major Professor              & Committee Member \\
+    & \\
+    & \\
+    \makebox[2.75in]{\hrulefill} & \makebox[2.75in]{\hrulefill}\\
+    $committee3$                 & $gradschool$ \\
+    Committee Member             & Vice President for Research and \\
+                                 & Dean of the School of Graduate Studies \\
+
+    \end{tabular}
+
+  \vspace{20pt}
+    \begin{center}
+	  \singlespacing
+      UTAH STATE UNIVERSITY\\
+	    Logan, Utah\\
+	    \doublespacing
+	    $year$
+	  \end{center}
+	\vspace*{\fill}
+	\clearpage
+}
+$endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LAYOUT: Copy Right - info filled above    %%
