@@ -53,6 +53,8 @@ This produces a document that matches the USU dissertation guidelines:
 
 <img src="inst/output.png" align="center" width="100%"/>
 
+If you'd rather have the Master's Thesis cover page, just remove the `committee5` and `committee4` lines in the main `.Rmd` file.
+
 ## Writing, Writing, Writing
 
 In the folder, there are other RMarkdown files called `Chapter1.Rmd`, `Chapter2.Rmd`, etc. These are the files where you will do the writing and analyzing. The main RMarkdown file will bring all these files together into one document. The only things you need to update in the main RMarkdown file is the `yaml` information, the abstracts, acknowledgments, and dedication.

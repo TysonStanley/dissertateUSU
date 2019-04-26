@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.1.4` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.1.5` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
@@ -48,6 +48,9 @@ This will open up a new folder with a skeleton RMarkdown file:
 This produces a document that matches the USU dissertation guidelines:
 
 <img src="inst/output.png" align="center" width="100%"/>
+
+If you’d rather have the Master’s Thesis cover page, just remove the
+`committee5` and `committee4` lines in the main `.Rmd` file.
 
 ## Writing, Writing, Writing
 
