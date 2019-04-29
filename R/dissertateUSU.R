@@ -19,7 +19,7 @@
 #'   \item \code{committee2} name of second committee member
 #'   \item \code{committee3} name of third committee member
 #'   \item \code{committee4} name of fourth committee member
-#'   \item \code{committee5} name of fifth committee member
+#'   \item \code{committee5} name of fifth committee member (if left blank, committee4 will be ignored and the cover page will be formatted as a masters thesis)
 #'   \item \code{gradschool} name of the graduate school member who needs to sign off on the degree
 #'   \item \code{bibliography} BibTeX \code{.bib} file name
 #'   \item \code{csl} the .csl citation style file name

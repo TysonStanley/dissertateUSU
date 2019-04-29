@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.1.5` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.1.6` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
@@ -39,18 +39,35 @@ To use the package, after installing it, open up a new RMarkdown file:
 
 and select the “Dissertate USU” template:
 
-<img src="inst/fromtemplate.png" align="center" width="80%"/>
+<img src="inst/fromtemplate.png" align="center" width="60%"/>
 
 This will open up a new folder with a skeleton RMarkdown file:
 
-<img src="inst/template.png" align="center" width="100%"/>
+<img src="inst/template.png" align="center" width="70%"/>
 
 This produces a document that matches the USU dissertation guidelines:
 
-<img src="inst/output.png" align="center" width="100%"/>
+<img src="inst/output.png" align="center" width="70%"/>
 
 If you’d rather have the Master’s Thesis cover page, just remove the
 `committee5` and `committee4` lines in the main `.Rmd` file.
+
+<img src="inst/thesis_coverpage.png" align="center" width="70%"/>
+
+<br>
+
+**Some important notes:**
+
+  - To put the title on two lines (see the thesis cover page above), use
+    `\newline` at the point where you want the title to split to the
+    second line. In general, USU wants the first of the two title lines
+    to be longer than the second part.
+  - If you don’t need a section (e.g., “Public Abstract”, “Chapter 5”,
+    etc.), remove it from the main `.Rmd` file. For example, if you want
+    to remove the “Public Abstract”, remove all the lines starting from
+    the `\newpage` in that section down to the actual words `Publically
+    abstracted words go here.`. It will then not be included in the
+    knitted document.
 
 ## Writing, Writing, Writing
 
