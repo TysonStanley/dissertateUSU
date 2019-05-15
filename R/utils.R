@@ -62,3 +62,4 @@ pdf_document_format <- function(..., format, template, csl) {
   # return format
   fmt
 }
+
