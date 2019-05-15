@@ -6,6 +6,7 @@ year: '2018'
 degree: 'Degree'
 field: 'Field'
 uni: 'UTAH STATE UNIVERSITY'
+location: "Logan, UT"
 chair: 'Chair Person'
 committee2: 'Committee Member 1'
 committee3: 'Committee Member 2'
