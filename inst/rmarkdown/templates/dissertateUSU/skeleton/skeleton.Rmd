@@ -4,8 +4,8 @@ author: "You"
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
 year: '2018'
 degree: 'Degree'
-uni: 'UTAH STATE UNIVERSITY'
 field: 'Field'
+uni: 'UTAH STATE UNIVERSITY'
 chair: 'Chair Person'
 committee2: 'Committee Member 1'
 committee3: 'Committee Member 2'
