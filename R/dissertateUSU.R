@@ -24,6 +24,7 @@
 #'   \item \code{committee4} name of fourth committee member
 #'   \item \code{committee5} name of fifth committee member (if left blank, committee4 will be ignored and the cover page will be formatted as a masters thesis)
 #'   \item \code{gradschool} name of the graduate school member who needs to sign off on the degree
+#'   \item \code{gradschoollabel} the position of the graduate school member
 #'   \item \code{bibliography} BibTeX \code{.bib} file name
 #'   \item \code{csl} the .csl citation style file name
 #'   \item \code{header-includes}: custom additions to the header, before the \code{\\begin\{document\}} statement

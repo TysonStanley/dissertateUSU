@@ -1,19 +1,19 @@
 ---
-title: 'Dissertating for USU'
+title: "Dissertating for USU"
 author: "You"
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
-year: '2019'
-degree: 'Degree'
-field: 'Field'
+year: "2019"
+degree: "Degree"
+field: "Field"
 department: "Your Department"
-uni: 'Utah State University'
+uni: "Utah State University"
 location: "Logan, UT"
-chair: 'Chair Person'
-committee2: 'Committee Member 1'
-committee3: 'Committee Member 2'
-committee4: 'Committee Member 3'
-committee5: 'Committee Member 4'
-gradschool: 'Richard S. Inouye, Ph.D.'
+chair: "Chair Person"
+committee2: "Committee Member 1"
+committee3: "Committee Member 2"
+committee4: "Committee Member 3"
+committee5: "Committee Member 4"
+gradschool: "Richard S. Inouye, Ph.D."
 gradschoollabel: "Vice Provost for Graduate Studies"
 bibliography: yourbibfile.bib
 output:
@@ -46,7 +46,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 
 Your abstract words go here. The line below puts the total number of pages at the end of your abstract (as required).
 
-(\pageref{LastPage} pages)
+\hfill(\pageref{LastPage} pages)
 
 
 <!-- Public Abstract -->
