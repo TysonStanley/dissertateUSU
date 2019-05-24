@@ -15,6 +15,7 @@
 #'   \item \code{year} year of defense
 #'   \item \code{degree} degree earned (e.g. "Doctor of Philosphy")
 #'   \item \code{field} the field the degree is awarded in
+#'   \item \code{department} the department awarding the degree
 #'   \item \code{uni} the full name of the university awarding the degree
 #'   \item \code{location} the location of the university
 #'   \item \code{chair} name of the defense committee chairperson

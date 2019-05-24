@@ -2,9 +2,10 @@
 title: 'Dissertating for USU'
 author: "You"
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
-year: '2018'
+year: '2019'
 degree: 'Degree'
 field: 'Field'
+department: "Your Department"
 uni: 'UTAH STATE UNIVERSITY'
 location: "Logan, UT"
 chair: 'Chair Person'
@@ -12,7 +13,8 @@ committee2: 'Committee Member 1'
 committee3: 'Committee Member 2'
 committee4: 'Committee Member 3'
 committee5: 'Committee Member 4'
-gradschool: 'The Graduate School Individual'
+gradschool: 'Richard S. Inouye, Ph.D.'
+gradschoollabel: "Vice Provost for Graduate Studies"
 bibliography: yourbibfile.bib
 output:
   dissertateUSU::dissertateUSU:
@@ -39,7 +41,26 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \chapter*{ABSTRACT}
 \addcontentsline{toc}{section}{Abstract}
 
-Abstract words go here.
+<!-- The stuff right below will autofill -->
+\doublespacing
+\begin{center}
+`r rmarkdown::metadata$title`
+\vspace{12pt}
+by \\
+\vspace{12pt}
+`r rmarkdown::metadata$author` \\
+`r rmarkdown::metadata$uni`, `r rmarkdown::metadata$year`
+\end{center}
+\vspace{12pt}
+\singlespacing
+\noindent Major Professor: `r rmarkdown::metadata$chair` \\
+\noindent Department: `r rmarkdown::metadata$department`
+\vspace{12pt}
+<!-- end of autofill -->
+
+\doublespacing
+
+Your abstract words go here.
 
 
 <!-- Public Abstract -->
@@ -49,8 +70,9 @@ Abstract words go here.
 \fancyfoot[C]{}
 \chapter*{PUBLIC ABSTRACT}
 \addcontentsline{toc}{section}{Public Abstract}
+\doublespacing
 
-Publically abstracted words go here.
+Your publically abstracted words go here.
 
 
 <!-- Dedication -->
@@ -60,6 +82,7 @@ Publically abstracted words go here.
 \fancyfoot[C]{}
 \chapter*{DEDICATION}
 \addcontentsline{toc}{section}{Dedication}
+
 
 Dedicate it.
 

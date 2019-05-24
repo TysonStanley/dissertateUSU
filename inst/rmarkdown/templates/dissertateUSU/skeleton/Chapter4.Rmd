@@ -1,4 +1,4 @@
-
+\doublespacing
 
 Write your Chapter 4 in this file. Go ahead and erase all the text in this chapter (and the other chapter files, as they are just trying to fill up space for the example)
 
