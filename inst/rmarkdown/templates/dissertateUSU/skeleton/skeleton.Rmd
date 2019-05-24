@@ -6,7 +6,7 @@ year: '2019'
 degree: 'Degree'
 field: 'Field'
 department: "Your Department"
-uni: 'UTAH STATE UNIVERSITY'
+uni: 'Utah State University'
 location: "Logan, UT"
 chair: 'Chair Person'
 committee2: 'Committee Member 1'
@@ -41,23 +41,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \chapter*{ABSTRACT}
 \addcontentsline{toc}{section}{Abstract}
 
-<!-- The stuff right below will autofill -->
-\doublespacing
-\begin{center}
-`r rmarkdown::metadata$title`
-\vspace{12pt}
-by \\
-\vspace{12pt}
-`r rmarkdown::metadata$author` \\
-`r rmarkdown::metadata$uni`, `r rmarkdown::metadata$year`
-\end{center}
-\vspace{12pt}
-\singlespacing
-\noindent Major Professor: `r rmarkdown::metadata$chair` \\
-\noindent Department: `r rmarkdown::metadata$department`
-\vspace{12pt}
-<!-- end of autofill -->
-
+\abstracttitle
 \doublespacing
 
 Your abstract words go here.
