@@ -44,7 +44,9 @@ knitr::opts_chunk$set(fig.path = 'figures/',
 \abstracttitle
 \doublespacing
 
-Your abstract words go here.
+Your abstract words go here. The line below puts the total number of pages at the end of your abstract (as required).
+
+(\pageref{LastPage} pages)
 
 
 <!-- Public Abstract -->
