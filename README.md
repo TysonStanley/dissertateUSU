@@ -3,6 +3,10 @@
 
 # `dissertateUSU` `v0.1.8` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
+[![DOI](https://zenodo.org/badge/109902299.svg)](https://zenodo.org/badge/latestdoi/109902299)
+
+![](https://img.shields.io/badge/status-stable-brightgreen.svg)
+
 The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
 
