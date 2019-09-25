@@ -62,9 +62,10 @@ If you’d rather have the Master’s Thesis cover page, just remove the
 **Some important notes:**
 
   - To put the title on two lines (see the thesis cover page above), use
-    `\newline` at the point where you want the title to split to the
-    second line. In general, USU wants the first of the two title lines
-    to be longer than the second part.
+    `\newline` (or if that doesn’t work, use `\\newline`) at the point
+    where you want the title to split to the second line. In general,
+    USU wants the first of the two title lines to be longer than the
+    second part.
   - If you don’t need a section (e.g., “Public Abstract”, “Chapter 5”,
     etc.), remove it from the main `.Rmd` file. For example, if you want
     to remove the “Public Abstract”, remove all the lines starting from
