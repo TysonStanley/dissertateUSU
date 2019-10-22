@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.1.8` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.2.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 [![DOI](https://zenodo.org/badge/109902299.svg)](https://zenodo.org/badge/latestdoi/109902299)
 ![](https://img.shields.io/badge/status-stable-brightgreen.svg)
@@ -89,9 +89,8 @@ feedback on any aspect that doesn’t work as expected.
 
 We also want to thank the
 [`rticles`](https://github.com/rstudio/rticles) package for the
-functionality for `dissertateUSU`. Many of the functions herein were
-derived directly from `rticles`, just with a custom template and LaTeX
-style.
+functionality for `dissertateUSU`. The idea to make this package, as
+well as its design, was derived from the `rticles` package.
 
-A special thanks to David Jenks for his help finding LaTeX bugs from
-older LaTeX releases.
+And thanks to David Jenks for his help finding LaTeX bugs from older
+LaTeX releases.

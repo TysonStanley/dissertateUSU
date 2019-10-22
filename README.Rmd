@@ -76,6 +76,6 @@ In the folder, there are other RMarkdown files called `Chapter1.Rmd`, `Chapter2.
 
 The package is still undergoing some development and we would love feedback on any aspect that doesn't work as expected. 
 
-We also want to thank the [`rticles`](https://github.com/rstudio/rticles) package for the functionality for `dissertateUSU`. Many of the functions herein were derived directly from `rticles`, just with a custom template and LaTeX style.
+We also want to thank the [`rticles`](https://github.com/rstudio/rticles) package for the functionality for `dissertateUSU`. The idea to make this package, as well as its design, was derived from the `rticles` package.
 
-A special thanks to David Jenks for his help finding LaTeX bugs from older LaTeX releases.
+And thanks to David Jenks for his help finding LaTeX bugs from older LaTeX releases.

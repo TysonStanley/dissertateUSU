@@ -67,7 +67,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \RequirePackage{fancyhdr}
 \RequirePackage[tiny, md, sc]{titlesec}
-\setlength{\headheight}{15pt}
+\setlength{\headheight}{20pt}
 \RequirePackage{titling}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
