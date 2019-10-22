@@ -44,7 +44,7 @@
 #' @export
 dissertateUSU <- function(..., highlight = NULL, citation_package = "none") {
 
-  # Find template and check it
+  # Find template in dissertateUSU and check it
   template_file <-
     system.file("rmarkdown", "templates", "dissertateUSU",
                 file.path("resources", "template.tex"),
@@ -60,7 +60,10 @@ dissertateUSU <- function(..., highlight = NULL, citation_package = "none") {
     citation_package = citation_package
     )
 
+  # Documentation of inherits
   pdf$inherits <- "pdf_document"
+
+  # Return pre-rendered output
   pdf
 }
 
