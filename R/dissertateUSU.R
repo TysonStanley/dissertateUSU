@@ -43,10 +43,24 @@
 #'
 #' @export
 dissertateUSU <- function(..., highlight = NULL, citation_package = "none") {
-  inherit_pdf_document(...,
-                       template = find_resource("dissertateUSU", "template.tex"),
-                       highlight = highlight,
-                       citation_package = citation_package)
-}
 
+  # Find template and check it
+  template_file <-
+    system.file("rmarkdown", "templates", "dissertateUSU",
+                file.path("resources", "template.tex"),
+                package = "dissertateUSU")
+  .check_template(template_file)
+
+  # Render the pdf_document with parameters
+  pdf <-
+    rmarkdown::pdf_document(
+    ...,
+    template = template_file,
+    highlight = highlight,
+    citation_package = citation_package
+    )
+
+  pdf$inherits <- "pdf_document"
+  pdf
+}
 
