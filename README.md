@@ -10,7 +10,7 @@ The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
 
 1.  Formatting of the dissertation is automatically done for you
-2.  All analyses are intimately tied to the document making the work
+2.  All analyses are intimately tied to the document, making the work
     more reproducible
 
 Ultimately, this allows the student to focus on the writing and the
@@ -57,9 +57,7 @@ If you’d rather have the Master’s Thesis cover page, just remove the
 
 <img src="inst/thesis_coverpage.png" align="center" width="70%"/>
 
-<br>
-
-**Some important notes:**
+### Some Important Notes
 
   - To put the title on two lines (see the thesis cover page above), use
     `\newline` (or if that doesn’t work, use `\\newline`) at the point
@@ -72,6 +70,10 @@ If you’d rather have the Master’s Thesis cover page, just remove the
     the `\newpage` in that section down to the actual words `Publically
     abstracted words go here.`. It will then not be included in the
     knitted document.
+  - Currently, the package uses APA 6 formatting for citations (by
+    default) but this can be altered by downloading a new `.csl` file
+    and specifying it in the yaml, by replacing the `apa6.csl` in the
+    `pandoc_args: [ "--csl", "apa6.csl" ]` argument with your file name.
 
 ## Writing, Writing, Writing
 
