@@ -1,6 +1,6 @@
-#' JASA Journal format.
+#' dissertateUSU format.
 #'
-#' Format for creating submissions to JASA Journals. Based on the official JASA journal class.
+#' Format for creating dissertations at Utah State University. It has been approved by the graduate school.
 #'
 #' @inheritParams rmarkdown::pdf_document
 #' @param ... Additional arguments to \code{rmarkdown::pdf_document}
