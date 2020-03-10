@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.2.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.2.1` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3516441.svg)](https://doi.org/10.5281/zenodo.3516441)
 ![](https://img.shields.io/badge/status-stable-brightgreen.svg)
@@ -36,7 +36,8 @@ remotes::install_github("tysonstanley/dissertateUSU")
 
 ## Example
 
-To use the package, after installing it, open up a new RMarkdown file:
+To use the package, after installing it–*and restarting Rstudio*–open up
+a new RMarkdown file:
 
 <img src="inst/dropdownmenu.png" align="center" width="20%"/>
 
@@ -70,10 +71,15 @@ If you’d rather have the Master’s Thesis cover page, just remove the
     the `\newpage` in that section down to the actual words `Publically
     abstracted words go here.`. It will then not be included in the
     knitted document.
-  - Currently, the package uses APA 6 formatting for citations (by
+  - Currently, the package uses APA 7 formatting for citations (by
     default) but this can be altered by downloading a new `.csl` file
-    and specifying it in the yaml, by replacing the `apa6.csl` in the
-    `pandoc_args: [ "--csl", "apa6.csl" ]` argument with your file name.
+    and specifying it in the yaml, by replacing the `apa7.csl` in the
+    `pandoc_args: [ "--csl", "apa7.csl" ]` argument with your file name.
+    The package also comes with `apa6.csl` to use.
+  - Although the School of Graduate Studies at Utah State University has
+    approved the use of `dissertateUSU`, before using it, talk to your
+    committee chair and your graduate program coordinator to make sure
+    it is approved by your department.
 
 ## Writing, Writing, Writing
 

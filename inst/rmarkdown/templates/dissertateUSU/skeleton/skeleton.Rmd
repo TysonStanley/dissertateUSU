@@ -20,7 +20,7 @@ output:
   dissertateUSU::dissertateUSU:
     latex_engine: xelatex
     keep_tex: yes
-    pandoc_args: [ "--csl", "apa6.csl" ]
+    pandoc_args: [ "--csl", "apa7.csl" ]
 ---
 
 ```{r global_options, include=FALSE}

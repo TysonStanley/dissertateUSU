@@ -15,6 +15,7 @@ devtools::load_all()
 ```
 
 
+
 # `dissertateUSU` `v`r packageVersion("dissertateUSU")`` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3516441.svg)](https://doi.org/10.5281/zenodo.3516441)
@@ -41,7 +42,7 @@ remotes::install_github("tysonstanley/dissertateUSU")
 
 ## Example
 
-To use the package, after installing it, open up a new RMarkdown file:
+To use the package, after installing it--*and restarting Rstudio*--open up a new RMarkdown file:
 
 <img src="inst/dropdownmenu.png" align="center" width="20%"/>
 
@@ -66,7 +67,8 @@ If you'd rather have the Master's Thesis cover page, just remove the `committee5
 
 - To put the title on two lines (see the thesis cover page above), use `\newline` (or if that doesn't work, use `\\newline`) at the point where you want the title to split to the second line. In general, USU wants the first of the two title lines to be longer than the second part.
 - If you don't need a section (e.g., "Public Abstract", "Chapter 5", etc.), remove it from the main `.Rmd` file. For example, if you want to remove the "Public Abstract", remove all the lines starting from the `\newpage` in that section down to the actual words `Publically abstracted words go here.`. It will then not be included in the knitted document.
--  Currently, the package uses APA 6 formatting for citations (by default) but this can be altered by downloading a new `.csl` file and specifying it in the yaml, by replacing the `apa6.csl` in the `pandoc_args: [ "--csl", "apa6.csl" ]` argument with your file name.
+- Currently, the package uses APA 7 formatting for citations (by default) but this can be altered by downloading a new `.csl` file and specifying it in the yaml, by replacing the `apa7.csl` in the `pandoc_args: [ "--csl", "apa7.csl" ]` argument with your file name. The package also comes with `apa6.csl` to use.
+- Although the School of Graduate Studies at Utah State University has approved the use of `dissertateUSU`, before using it, talk to your committee chair and your graduate program coordinator to make sure it is approved by your department.
 
 ## Writing, Writing, Writing
 
