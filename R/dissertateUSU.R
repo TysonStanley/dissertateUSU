@@ -42,7 +42,7 @@
 #' @import yaml
 #'
 #' @export
-dissertateUSU <- function(..., highlight = NULL, citation_package = "none") {
+dissertateUSU <- function(..., highlight = NULL, citation_package = "default") {
 
   # Find template in dissertateUSU
   template_file <-
