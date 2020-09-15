@@ -54,7 +54,7 @@
 % \setmonofont[Scale=MatchLowercase]{Source Code Pro}
 \RequirePackage[labelfont={bf,small,singlespacing},
                 textfont={small,singlespacing},
-                justification={justified,RaggedRight},
+                justification={raggedright},
                 singlelinecheck=false,
                 margin=0pt,
                 figurewithin=chapter,
