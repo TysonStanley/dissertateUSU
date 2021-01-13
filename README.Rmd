@@ -74,6 +74,30 @@ If you'd rather have the Master's Thesis cover page, just remove the `committee5
 
 In the folder, there are other RMarkdown files called `Chapter1.Rmd`, `Chapter2.Rmd`, etc. These are the files where you will do the writing and analyzing. The main RMarkdown file will bring all these files together into one document. The only things you need to update in the main RMarkdown file is the `yaml` information, the abstracts, acknowledgments, and dedication.
 
+To add appendices, you can use the following at the very end of the skeleton `.Rmd` file:
+
+```
+<div id="refs"></div>
+
+<!-- Appendix -->
+
+\clearpage
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\addcontentsline{toc}{chapter}{APPENDICES}
+\fancyhead[L]{Appendices}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\vspace*{\fill}
+  \begin{center}
+    APPENDICES
+  \end{center}
+\vspace*{\fill}
+
+# Appendix A
+...appendix stuff...
+```
+
 ## Note
 
 The package is still undergoing some development and we would love feedback on any aspect that doesn't work as expected. 

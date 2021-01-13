@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.2.1` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.2.2` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3516441.svg)](https://doi.org/10.5281/zenodo.3516441)
 ![](https://img.shields.io/badge/status-stable-brightgreen.svg)
@@ -89,6 +89,29 @@ and analyzing. The main RMarkdown file will bring all these files
 together into one document. The only things you need to update in the
 main RMarkdown file is the `yaml` information, the abstracts,
 acknowledgments, and dedication.
+
+To add appendices, you can use the following at the very end of the
+skeleton `.Rmd` file:
+
+    <div id="refs"></div>
+    
+    <!-- Appendix -->
+    
+    \clearpage
+    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+    \addcontentsline{toc}{chapter}{APPENDICES}
+    \fancyhead[L]{Appendices}
+    \fancyhead[R]{\thepage}
+    \fancyfoot[C]{}
+    
+    \vspace*{\fill}
+      \begin{center}
+        APPENDICES
+      \end{center}
+    \vspace*{\fill}
+    
+    # Appendix A
+    ...appendix stuff...
 
 ## Note
 
