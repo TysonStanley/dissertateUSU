@@ -15,7 +15,6 @@ devtools::load_all()
 ```
 
 
-
 # `dissertateUSU` `v`r packageVersion("dissertateUSU")`` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3516441.svg)](https://doi.org/10.5281/zenodo.3516441)
@@ -85,7 +84,7 @@ To add appendices, you can use the following at the very end of the skeleton `.R
 \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \addcontentsline{toc}{chapter}{APPENDICES}
 \fancyhead[L]{Appendices}
-\fancyhead[R]{\thepage}
+\fancyhead[R]{Page\newline\thepage}
 \fancyfoot[C]{}
 
 \vspace*{\fill}
@@ -105,3 +104,4 @@ The package is still undergoing some development and we would love feedback on a
 We also want to thank the [`rticles`](https://github.com/rstudio/rticles) package for the functionality for `dissertateUSU`. The idea to make this package, as well as its design, was derived from the `rticles` package.
 
 And thanks to David Jenks for his help finding LaTeX bugs from older LaTeX releases.
+

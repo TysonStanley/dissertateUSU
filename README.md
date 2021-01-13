@@ -101,7 +101,7 @@ skeleton `.Rmd` file:
     \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
     \addcontentsline{toc}{chapter}{APPENDICES}
     \fancyhead[L]{Appendices}
-    \fancyhead[R]{\thepage}
+    \fancyhead[R]{Page\newline\thepage}
     \fancyfoot[C]{}
     
     \vspace*{\fill}
