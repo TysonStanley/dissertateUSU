@@ -61,15 +61,6 @@
                 tablewithin=chapter]{caption}
 \RequirePackage{microtype}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%   Chapters (no page number on first page)   %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
-                    \thispagestyle{plain}%
-                    \global\@topnum\z@
-                    \@afterindentfalse
-                    \secdef\@chapter\@schapter}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%        Headings & Headers         %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -156,9 +147,9 @@
 %}}}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% LAYOUT: SECTION HEADINGS- auto fill %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LAYOUT: CHAPTER & SECTION HEADINGS - auto fill %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \renewcommand{\setthesection}{\roman{chapter}.A\roman{section}}
 \usepackage{quotchap}
@@ -167,7 +158,7 @@
 \usepackage{titlesec, blindtext, color}
 
 \titleformat{\chapter}[display]
-{\vspace{-60pt}\center}   %% spacing of chapter headings
+{\thispagestyle{empty}\vspace{-60pt}\center}   %% spacing of chapter headings
 {{CHAPTER \thechapter}}
 {0pt}
 {}
