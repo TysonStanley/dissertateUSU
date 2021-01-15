@@ -92,6 +92,12 @@
 \renewcommand{\cftchapafterpnum}{\vspace{10pt}}
 \newcommand{\hsp}{\hspace{20pt}}
 
+\renewcommand*{\tableofcontents}{
+    \chapter*{ \begin{center} \textnormal{\contentsname}  \end{center}}
+    \hfill Page\\
+    \@starttoc{toc}
+    \newpage
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LAYOUT: List of TABLES - auto fill %%
