@@ -27,6 +27,8 @@ The goal of `dissertateUSU` is to make two aspects of writing a dissertation at 
 
 Ultimately, this allows the student to focus on the writing and the results without having to worry excessively about updating tables and figures, adjusting formatting of things like the title page and table of contents, and other minor (but important) aspects of getting the document correct.
 
+It is up-to-date as of the 2020-21 graduate school formatting guidelines.
+
 ## Installation
 
 You can install `dissertateUSU` with:
@@ -81,7 +83,6 @@ To add appendices, you can use the following at the very end of the skeleton `.R
 <!-- Appendix -->
 
 \clearpage
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 \addcontentsline{toc}{chapter}{APPENDICES}
 \fancyhead[L]{Appendices}
 \fancyhead[R]{Page\newline\thepage}
@@ -93,7 +94,8 @@ To add appendices, you can use the following at the very end of the skeleton `.R
   \end{center}
 \vspace*{\fill}
 
-# Appendix A
+\addcontentsline{toc}{section}{Appendix A}
+\section*{Appendix A}
 ...appendix stuff...
 ```
 

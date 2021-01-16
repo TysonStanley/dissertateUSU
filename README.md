@@ -19,6 +19,9 @@ figures, adjusting formatting of things like the title page and table of
 contents, and other minor (but important) aspects of getting the
 document correct.
 
+It is up-to-date as of the 2020-21 graduate school formatting
+guidelines.
+
 ## Installation
 
 You can install `dissertateUSU` with:
@@ -98,7 +101,6 @@ skeleton `.Rmd` file:
     <!-- Appendix -->
     
     \clearpage
-    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
     \addcontentsline{toc}{chapter}{APPENDICES}
     \fancyhead[L]{Appendices}
     \fancyhead[R]{Page\newline\thepage}
@@ -110,7 +112,8 @@ skeleton `.Rmd` file:
       \end{center}
     \vspace*{\fill}
     
-    # Appendix A
+    \addcontentsline{toc}{section}{Appendix A}
+    \section*{Appendix A}
     ...appendix stuff...
 
 ## Note
