@@ -3,7 +3,6 @@
 %% Original Formatting by Sarah Schwartz, PhD
 
 % Document class and options
-\NeedsTeXFormat{LaTeX2e}
 \documentclass[12pt, oneside, letterpaper]{book}
 \usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
 
@@ -19,10 +18,10 @@ $preamble$
 %%%%%%%%%%%%%%%%%
 %%   Options   %%
 %%%%%%%%%%%%%%%%%
-\RequirePackage{etoolbox}
+\usepackage{etoolbox}
 
 %{{{ Line-spacing control
-\RequirePackage{setspace}
+\usepackage{setspace}
 \newcommand{\singlespaced}{\singlespacing}
 \newcommand{\doublespaced}{\doublespacing}
 \newcommand{\triplespaced}{\setstretch {2.6}}
@@ -94,12 +93,12 @@ $preamble$
 \renewcommand{\cftchapafterpnum}{\vspace{10pt}}
 \newcommand{\hsp}{\hspace{20pt}}
 
-\renewcommand*{\tableofcontents}{
-    \chapter*{ \begin{center} \textnormal{\contentsname}  \end{center}}
-    \hfill Page\\
-    \@starttoc{toc}
-    \newpage
-}
+% \renewcommand*{\tableofcontents}{
+%     \chapter*{ \begin{center} \textnormal{\contentsname}  \end{center}}
+%     \hfill Page\\
+%     \@starttoc{toc}
+%     \newpage
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LAYOUT: List of TABLES - auto fill %%
@@ -200,10 +199,10 @@ $preamble$
 %%%%%%%%%%%%%%%%%%
 % This is for the references (cite all at end or cite after each paper)
 $if(multipaper)$
-\usepackage[sectionbib]{natbib}
-\usepackage{chapterbib}
+  \usepackage[sectionbib]{natbib}
+  \usepackage{chapterbib}
 $else$
-\usepackage{natbib}
+  \usepackage{natbib}
 $endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%
