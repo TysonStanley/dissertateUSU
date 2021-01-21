@@ -30,6 +30,7 @@ knitr::opts_chunk$set(fig.path = 'figures/',
                       echo = FALSE, 
                       warning = FALSE, 
                       message = FALSE)
+library(dissertateUSU)
 ```
 
 
