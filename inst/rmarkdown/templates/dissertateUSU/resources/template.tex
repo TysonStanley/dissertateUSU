@@ -21,27 +21,27 @@ $preamble$
 %%%%%%%%%%%%%%%%%%
 % This is for the references (cite all at end or cite after each paper)
 $if(multipaper)$
-  \usepackage[sectionbib]{natbib}
-  \usepackage{chapterbib}
+\usepackage[sectionbib]{natbib}
+\usepackage{chapterbib}
 $else$
-  \usepackage{natbib}
+\usepackage{natbib}
 $endif$
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %% All Other Packages %%
 %%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{lastpage}
-\usepackage{endnotes}% if authoryear option is used
-\usepackage{graphicx}% Include figure files
-\usepackage{dcolumn}% Align table columns on decimal point
-\usepackage{bm}% bold math
-\usepackage{amsmath,amsfonts}% popular packages from the American Mathematical Society
-\usepackage{latexsym}% latex symbols
-\usepackage{lineno}% for line numbers
-\usepackage{array}% for tables
-\usepackage{ulem}% for underlining
-\usepackage{xcolor}%  for color declarations
-\usepackage{hyperref}% for hypertext linking
+\usepackage{endnotes} % if authoryear option is used
+\usepackage{graphicx} % Include figure files
+\usepackage{dcolumn}  % Align table columns on decimal point
+\usepackage{bm}       % bold math
+\usepackage{amsmath,amsfonts} % popular packages from the American Mathematical Society
+\usepackage{latexsym}         % latex symbols
+\usepackage{lineno}           % for line numbers
+\usepackage{array}            % for tables
+\usepackage{ulem}             % for underlining
+\usepackage{xcolor}           %  for color declarations
+\usepackage{hyperref}         % for hypertext linking
 % for the tightlist
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -269,8 +269,12 @@ $body$
 %% ==== %%%%%%%%%%%%%%%%%%% ==== %%
 %% ==== %% Bib and After %% ==== %%
 %% ==== %%%%%%%%%%%%%%%%%%% ==== %%
+$if(multipaper)$
+
+$else$
 $if(bibliography)$
 \bibliography{$for(bibliography)$$bibliography$$sep$,$endfor$}
+$endif$
 $endif$
 
 $for(include-after)$
