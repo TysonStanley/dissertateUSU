@@ -2,9 +2,9 @@
 % Please edit documentation in R/dissertateUSU.R
 \name{dissertateUSU}
 \alias{dissertateUSU}
-\title{JASA Journal format.}
+\title{dissertateUSU format.}
 \usage{
-dissertateUSU(..., highlight = NULL, citation_package = "none")
+dissertateUSU(..., highlight = NULL, citation_package = "default")
 }
 \arguments{
 \item{...}{Additional arguments to \code{rmarkdown::pdf_document}}
@@ -14,14 +14,16 @@ dissertateUSU(..., highlight = NULL, citation_package = "none")
 "zenburn", and "haddock". Pass \code{NULL} to prevent syntax highlighting.}
 
 \item{citation_package}{The LaTeX package to process citations, \code{natbib}
-or \code{biblatex}. Use \code{none} if neither package is to be used.}
+or \code{biblatex}. Use \code{default} if neither package is to be used,
+which means citations will be processed via the command
+\command{pandoc-citeproc}.}
 }
 \value{
 R Markdown output format to pass to
   \code{\link[rmarkdown:render]{render}}
 }
 \description{
-Format for creating submissions to JASA Journals. Based on the official JASA journal class.
+Format for creating dissertations at Utah State University. It has been approved by the graduate school.
 }
 \details{
 Possible arguments for the YAML header are:
@@ -42,6 +44,7 @@ Possible arguments for the YAML header are:
   \item \code{gradschool} name of the graduate school member who needs to sign off on the degree
   \item \code{gradschoollabel} the position of the graduate school member
   \item \code{bibliography} BibTeX \code{.bib} file name
+  \item \code{multipaper} whether the design is a multi-paper format (true) or monograph (false). This provides additional functionality for having citations at the end of each chapter.
   \item \code{csl} the .csl citation style file name
   \item \code{header-includes}: custom additions to the header, before the \code{\\begin\{document\}} statement
   \item \code{include-after}: for including additional LaTeX code before the \code{\\end\{document\}} statement
