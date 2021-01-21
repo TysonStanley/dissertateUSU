@@ -163,7 +163,7 @@ Finally, change the core `.Rmd` code chunks from:
 to:
 
 ```` markdown
-```{r}
+```{r, results='asis'}
 chapter_knit("Chapter2")
 ```
 ````
