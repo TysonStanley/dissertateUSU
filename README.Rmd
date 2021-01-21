@@ -64,7 +64,7 @@ If you'd rather have the Master's Thesis cover page, just remove the `committee5
 <img src="inst/thesis_coverpage.png" align="center" width="70%"/>
 
 
-### Some Important Notes
+### General Notes
 
 - To put the title on two lines (see the thesis cover page above), use `\newline` (or if that doesn't work, use `\\newline`) at the point where you want the title to split to the second line. In general, USU wants the first of the two title lines to be longer than the second part.
 - If you don't need a section (e.g., "Public Abstract", "Chapter 5", etc.), remove it from the main `.Rmd` file. For example, if you want to remove the "Public Abstract", remove all the lines starting from the `\newpage` in that section down to the actual words `Publically abstracted words go here.`. It will then not be included in the knitted document.
@@ -74,6 +74,10 @@ If you'd rather have the Master's Thesis cover page, just remove the `committee5
 ## Writing, Writing, Writing
 
 In the folder, there are other RMarkdown files called `Chapter1.Rmd`, `Chapter2.Rmd`, etc. These are the files where you will do the writing and analyzing. The main RMarkdown file will bring all these files together into one document. The only things you need to update in the main RMarkdown file is the `yaml` information, the abstracts, acknowledgments, and dedication.
+
+## Some specifics for formatting
+
+### Appendices 
 
 To add appendices, you can use the following at the very end of the skeleton `.Rmd` file:
 
@@ -99,7 +103,60 @@ To add appendices, you can use the following at the very end of the skeleton `.R
 ...appendix stuff...
 ```
 
-## Note
+
+### Multipaper Format
+
+A now common approach for dissertations at Utah State University are multi-paper dissertations. To make this work in `dissertateUSU`, you will need to use four steps. First, note each of the chapters that are the individual papers (e.g., chapters 2, 3, and 4).
+
+First, add the bibliography line to the yaml for each chapter that will be its own paper. To do that, add the following lines to the top of the `.Rmd` file, where `yourbibfile.bib` is the name of the bib file you are using. Do this for each chapter.
+
+```
+---
+bibliography: yourbibfile.bib
+---
+```
+
+Second, add the following at the end of the chapter.
+
+```
+\section*{References}
+
+\setlength{\parindent}{-0.6in}
+\setlength{\leftskip}{0.6in}
+\setlength{\parskip}{6pt}
+\noindent
+```
+
+Third, to reset the paragraph formatting for the following chapter, at the beginning of the next chapter add:
+
+```
+\setlength{\parindent}{0.4in}
+\setlength{\leftskip}{0.0in}
+\setlength{\parskip}{6pt}
+\noindent
+```
+
+Finally, change the core `.Rmd` code chunks from:
+
+````markdown
+`r ''````{r, child="Chapter2.Rmd"}
+```
+````
+
+
+to:
+
+````markdown
+`r ''````{r}
+chapter_knit("Chapter2")
+```
+````
+
+This will do an alternative form of knitting (and will create a `.md` and `.tex` file for the chapter).
+
+
+
+## Final Notes and Thanks
 
 The package is still undergoing some development and we would love feedback on any aspect that doesn't work as expected. 
 

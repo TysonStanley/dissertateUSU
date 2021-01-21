@@ -61,7 +61,7 @@ If you’d rather have the Master’s Thesis cover page, just remove the
 
 <img src="inst/thesis_coverpage.png" align="center" width="70%"/>
 
-### Some Important Notes
+### General Notes
 
   - To put the title on two lines (see the thesis cover page above), use
     `\newline` (or if that doesn’t work, use `\\newline`) at the point
@@ -93,6 +93,10 @@ together into one document. The only things you need to update in the
 main RMarkdown file is the `yaml` information, the abstracts,
 acknowledgments, and dedication.
 
+## Some specifics for formatting
+
+### Appendices
+
 To add appendices, you can use the following at the very end of the
 skeleton `.Rmd` file:
 
@@ -116,7 +120,58 @@ skeleton `.Rmd` file:
     \section*{Appendix A}
     ...appendix stuff...
 
-## Note
+### Multipaper Format
+
+A now common approach for dissertations at Utah State University are
+multi-paper dissertations. To make this work in `dissertateUSU`, you
+will need to use four steps. First, note each of the chapters that are
+the individual papers (e.g., chapters 2, 3, and 4).
+
+First, add the bibliography line to the yaml for each chapter that will
+be its own paper. To do that, add the following lines to the top of the
+`.Rmd` file, where `yourbibfile.bib` is the name of the bib file you are
+using. Do this for each chapter.
+
+    ---
+    bibliography: yourbibfile.bib
+    ---
+
+Second, add the following at the end of the chapter.
+
+    \section*{References}
+    
+    \setlength{\parindent}{-0.6in}
+    \setlength{\leftskip}{0.6in}
+    \setlength{\parskip}{6pt}
+    \noindent
+
+Third, to reset the paragraph formatting for the following chapter, at
+the beginning of the next chapter add:
+
+    \setlength{\parindent}{0.4in}
+    \setlength{\leftskip}{0.0in}
+    \setlength{\parskip}{6pt}
+    \noindent
+
+Finally, change the core `.Rmd` code chunks from:
+
+```` markdown
+```{r, child="Chapter2.Rmd"}
+```
+````
+
+to:
+
+```` markdown
+```{r}
+chapter_knit("Chapter2")
+```
+````
+
+This will do an alternative form of knitting (and will create a `.md`
+and `.tex` file for the chapter).
+
+## Final Notes and Thanks
 
 The package is still undergoing some development and we would love
 feedback on any aspect that doesn’t work as expected.
