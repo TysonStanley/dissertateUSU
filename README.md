@@ -130,11 +130,18 @@ the individual papers (e.g., chapters 2, 3, and 4).
 First, add the bibliography line to the yaml for each chapter that will
 be its own paper. To do that, add the following lines to the top of the
 `.Rmd` file, where `yourbibfile.bib` is the name of the bib file you are
-using. Do this for each chapter.
+using. At the same time, remove the `\newpage` to `\chapter{}` from the
+core `.Rmd` file for that specific chapter. Do this for each chapter.
 
     ---
     bibliography: yourbibfile.bib
     ---
+    
+    \newpage
+    \fancyhead[R]{\thepage}
+    \fancyfoot[C]{}
+    
+    \chapter{Chapter name}
 
 Second, add the following at the end of the chapter.
 

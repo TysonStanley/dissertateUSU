@@ -108,12 +108,18 @@ To add appendices, you can use the following at the very end of the skeleton `.R
 
 A now common approach for dissertations at Utah State University are multi-paper dissertations. To make this work in `dissertateUSU`, you will need to use four steps. First, note each of the chapters that are the individual papers (e.g., chapters 2, 3, and 4).
 
-First, add the bibliography line to the yaml for each chapter that will be its own paper. To do that, add the following lines to the top of the `.Rmd` file, where `yourbibfile.bib` is the name of the bib file you are using. Do this for each chapter.
+First, add the bibliography line to the yaml for each chapter that will be its own paper. To do that, add the following lines to the top of the `.Rmd` file, where `yourbibfile.bib` is the name of the bib file you are using. At the same time, remove the `\newpage` to `\chapter{}` from the core `.Rmd` file for that specific chapter. Do this for each chapter. 
 
 ```
 ---
 bibliography: yourbibfile.bib
 ---
+
+\newpage
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+
+\chapter{Chapter name}
 ```
 
 Second, add the following at the end of the chapter.
