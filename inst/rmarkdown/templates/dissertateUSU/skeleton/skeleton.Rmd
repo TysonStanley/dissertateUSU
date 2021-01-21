@@ -2,7 +2,7 @@
 title: "Dissertating for USU"
 author: "You"
 geometry: [top=1in, bottom=1in, right=1in, left=1.5in]
-year: "2019"
+year: "2021"
 degree: "Degree"
 field: "Field"
 department: "Your Department"
@@ -16,6 +16,7 @@ committee5: "Committee Member 4"
 gradschool: "Richard S. Inouye, Ph.D."
 gradschoollabel: "Vice Provost for Graduate Studies"
 bibliography: yourbibfile.bib
+multipaper: true
 output:
   dissertateUSU::dissertateUSU:
     latex_engine: xelatex
