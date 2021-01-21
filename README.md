@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.2.2` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.3.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3516441.svg)](https://doi.org/10.5281/zenodo.3516441)
 ![](https://img.shields.io/badge/status-stable-brightgreen.svg)
