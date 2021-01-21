@@ -73,3 +73,25 @@ dissertateUSU <- function(..., highlight = NULL, citation_package = "default") {
   pdf
 }
 
+#' Helper Function for Multipaper
+#'
+#' @param file the name of the file (without the suffix)
+#'
+#' @importFrom knitr knit
+#' @importFrom rmarkdown pandoc_convert
+#'
+#' @export
+chapter_knit = function(file, options = c("--csl", "apa7.csl")){
+  knitr::knit(paste0(file, ".Rmd"), quiet = TRUE)
+  suppressMessages(
+    rmarkdown::pandoc_convert(
+      paste0(file, ".md"),
+      to = "latex",
+      output = paste0(file, ".tex"),
+      citeproc = TRUE,
+      options = options
+    )
+  )
+  cat("\\include{", file, ".tex}", sep = "")
+}
+
