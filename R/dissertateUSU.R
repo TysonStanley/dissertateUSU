@@ -76,6 +76,7 @@ dissertateUSU <- function(..., highlight = NULL, citation_package = "default") {
 #' Helper Function for Multipaper
 #'
 #' @param file the name of the file (without the suffix)
+#' @param options options passed to pandoc
 #'
 #' @importFrom knitr knit
 #' @importFrom rmarkdown pandoc_convert

@@ -8,6 +8,8 @@ chapter_knit(file, options = c("--csl", "apa7.csl"))
 }
 \arguments{
 \item{file}{the name of the file (without the suffix)}
+
+\item{options}{options passed to pandoc}
 }
 \description{
 Helper Function for Multipaper

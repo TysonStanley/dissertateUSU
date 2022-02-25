@@ -1,10 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# `dissertateUSU` `v0.3.0` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
+# `dissertateUSU` `v0.3.1` <img src="inst/dissertateUSU_hex.png" align="right" width="30%" height="30%"/>
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/TysonStanley/dissertateUSU/workflows/R-CMD-check/badge.svg)](https://github.com/TysonStanley/dissertateUSU/actions)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3516441.svg)](https://doi.org/10.5281/zenodo.3516441)
 ![](https://img.shields.io/badge/status-stable-brightgreen.svg)
+<!-- badges: end -->
 
 The goal of `dissertateUSU` is to make two aspects of writing a
 dissertation at Utah State University better:
@@ -63,23 +67,23 @@ If you’d rather have the Master’s Thesis cover page, just remove the
 
 ### General Notes
 
-  - To put the title on two lines (see the thesis cover page above), use
+-   To put the title on two lines (see the thesis cover page above), use
     `\newline` (or if that doesn’t work, use `\\newline`) at the point
     where you want the title to split to the second line. In general,
     USU wants the first of the two title lines to be longer than the
     second part.
-  - If you don’t need a section (e.g., “Public Abstract”, “Chapter 5”,
+-   If you don’t need a section (e.g., “Public Abstract”, “Chapter 5”,
     etc.), remove it from the main `.Rmd` file. For example, if you want
     to remove the “Public Abstract”, remove all the lines starting from
-    the `\newpage` in that section down to the actual words `Publically
-    abstracted words go here.`. It will then not be included in the
-    knitted document.
-  - Currently, the package uses APA 7 formatting for citations (by
+    the `\newpage` in that section down to the actual words
+    `Publically abstracted words go here.`. It will then not be included
+    in the knitted document.
+-   Currently, the package uses APA 7 formatting for citations (by
     default) but this can be altered by downloading a new `.csl` file
     and specifying it in the yaml, by replacing the `apa7.csl` in the
     `pandoc_args: [ "--csl", "apa7.csl" ]` argument with your file name.
     The package also comes with `apa6.csl` to use.
-  - Although the School of Graduate Studies at Utah State University has
+-   Although the School of Graduate Studies at Utah State University has
     approved the use of `dissertateUSU`, before using it, talk to your
     committee chair and your graduate program coordinator to make sure
     it is approved by your department.
@@ -101,21 +105,21 @@ To add appendices, you can use the following at the very end of the
 skeleton `.Rmd` file:
 
     <div id="refs"></div>
-    
+
     <!-- Appendix -->
-    
+
     \clearpage
     \addcontentsline{toc}{chapter}{APPENDICES}
     \fancyhead[L]{Appendices}
     \fancyhead[R]{Page\newline\thepage}
     \fancyfoot[C]{}
-    
+
     \vspace*{\fill}
       \begin{center}
         APPENDICES
       \end{center}
     \vspace*{\fill}
-    
+
     \addcontentsline{toc}{section}{Appendix A}
     \section*{Appendix A}
     ...appendix stuff...
@@ -136,17 +140,17 @@ core `.Rmd` file for that specific chapter. Do this for each chapter.
     ---
     bibliography: yourbibfile.bib
     ---
-    
+
     \newpage
     \fancyhead[R]{\thepage}
     \fancyfoot[C]{}
-    
+
     \chapter{Chapter name}
 
 Second, add the following at the end of the chapter.
 
     \section*{References}
-    
+
     \setlength{\parindent}{-0.6in}
     \setlength{\leftskip}{0.6in}
     \setlength{\parskip}{6pt}

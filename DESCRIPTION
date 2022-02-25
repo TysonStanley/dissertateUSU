@@ -1,10 +1,10 @@
 Package: dissertateUSU
 Type: Package
 Title: DissertateUSU
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: c(person("Tyson S.", "Barrett",  
                     role=c("aut","cre"), 
-                    email = "t.barrett@aggiemail.usu.edu", 
+                    email = "t.barrett88@gmail.com", 
                     comment = c(ORCID = "0000-0002-2137-1391")),
  	         person("Sarah", "Schwartz", role=c("aut")))
 Maintainer: Tyson S. Barrett <t.barrett@aggiemail.usu.edu>
